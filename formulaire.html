@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Mon site</title>
+
+  <meta charset="utf-8"/> 
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/stylesglobal.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  
+  <style></style>
+</head>
+<body>
+
+<div id="conteneur"> <!--Contenu total site -->
+
+<!--Contenu de mon en-tête -->
+    <header>
+    		<h1>votre logo ici</h1>
+    	<aside>
+    		<ul>
+    			<li><a href="formulaire.html">S'inscrire</a></li>
+    			<li><a href="formulaire.html">Se connecter</a></li>
+    		</ul>
+    	</aside>
+      	<nav>
+      		<ul>
+    			<li><a href="homepage.html">Accueil</a></li>
+    			<li><a href="galeriephotos.html">A propos de</a></li>
+    			<li><a href="formulaire.html">Contact</a></li>
+    			<li><a href="">Cours</a></li>
+    			<li><a href="">Etudiants</a></li>
+    			<li><a href="">Services</a></li>
+    			<li><a href="">Formateurs</a></li>
+				<li><a href="">Statistiques</a></li>
+			</ul>
+      	</nav>
+    </header>
+      
+<!--Contenu des articles de ma page : là un formulaire !-->      
+    <main>
+    <div id="empty-bloc">
+        <img src="images/accent.png" alt="Flèche ronde bleue" title="Icon ronde bleue"/>
+    </div>
+      <section>
+          <div id="contentgrey">
+            <h3 class="ss-titre-formulaire">Edit</h3>
+            
+            <form method="get" action="mapagecible.html">
+              <div id="typetext">
+                <label class="" for="id_nom">Nom</label>
+                <input type="text" name="nom" id="id_nom" placeholder="ex: Dupond" maxlenght="40" required/>  
+  
+                <label class="" for="id_prenom">Prénom</label>
+                <input type="text" name="prenom" id=" id_prenom" placeholder="ex: Marie-Louise" maxlenght="60" required/>  
+  
+                <label class="" for="id_dateembauche">Embauché(e),  le:</label>  
+                <input type="text" name="dateembauche" id=" id_dateembauche" pattern="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d" placeholder="01/01/2000" maxlenght="10" required/>
+              </div>
+
+              <div id="typecheckbox">
+                <label class="" for=""></label>
+                <input type="checkbox"><span class="typebtn">2010 - Langage PHP</span>
+                <input type="checkbox"><span class="typebtn">2020 - SQL</span>
+                <input type="checkbox"><span class="typebtn">3030 - C++</span>
+                <input type="checkbox"><span class="typebtn">4040 - JAVA</span>
+                <input type="checkbox"><span class="typebtn">5050 - UNIX</span>
+                <input type="checkbox"><span class="typebtn">6060 - windows</span>
+                <input type="checkbox"><span class="typebtn">6070 - HP - UX</span>
+              </div>
+              
+              <input class="btsave" type="submit" value="save" id="btsubmit"/>
+              
+              <p class="bt-backto"><a href="homepage.html">Back to list!</a></p>
+            </form>
+          </div>
+      </section>
+    </main>  
+
+<!--Contenu de mon pied de page -->
+    <footer>
+      <div id="contentfooter">
+        <h5>&copy; 2016 - F2I MVC</h5>
+      </div>
+    </footer>    
+
+</div>
+
+</body>
+</html>
